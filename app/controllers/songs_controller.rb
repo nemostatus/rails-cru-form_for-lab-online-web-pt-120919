@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+  belongs_to :genre, :artist
   def new
   end
 
@@ -11,11 +12,7 @@ class SongsController < ApplicationController
   def update
   end
 
-  def destroy
-  end
-
-  def index
-  end
+  
 
   def show
   end
