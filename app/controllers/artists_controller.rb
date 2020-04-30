@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
-    has_many :songs
+  
     def new
         @artist = Artist.new
     end
@@ -22,6 +22,7 @@ class ArtistsController < ApplicationController
    
     def show
         @artist = Artist.find(params[:id])
+
     end
 
     private
